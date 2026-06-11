@@ -18,4 +18,5 @@ Aqui está a lista de todos os projetos que desenvolvi seguindo o roadmap:
   <li><a href="https://roadmap.sh/projects/accordion">Accordion</a></li>
   <li><a href="https://roadmap.sh/projects/age-calculator">Age Calculator</a></li>
   <li><a href="https://roadmap.sh/projects/flash-cards">Flash Cards</a></li>
+  <li><a href="https://roadmap.sh/projects/pricing-comparison-table">Pricing Comparison Table</a></li>
 </ul>
