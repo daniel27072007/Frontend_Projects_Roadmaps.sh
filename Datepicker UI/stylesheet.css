@@ -1,0 +1,157 @@
+@import url('https://googleapis.com');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Stack Sans Text', sans-serif;
+}
+
+.settings{
+    border: solid black 3px;
+    border-bottom: none;
+    width: 600px;
+    height: 442px;
+    margin: 250px auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid black 3px;
+    padding: 20px 40px;
+    position: relative;
+}
+
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 105px;
+    border-right: black 3px solid;
+}
+
+.header img{
+    width: 25px;
+    height: 25px;
+}
+
+#date{
+    display: flex;
+    gap: 10px;
+}
+
+.calendar{
+    display: flex;
+    flex-direction: column;
+}
+
+#topInfo{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px solid black;
+}
+
+#calendarSearch{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    position: relative;
+}
+
+#calendarSearch::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 0;
+    height: 0;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 20px solid black;
+    transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+#calendarSearch::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    width: 0;
+    height: 0;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 20px solid black;
+    transform: translate(50%, -50%) rotate(90deg);
+}
+
+#weekNames{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 10px;
+    padding: 10px;
+    /* border: 3px solid black; */
+}
+
+#weekNames p{
+    width: 25px;
+    text-align: center;
+}
+
+#bottomInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+#daysRow{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 3px solid black;
+    position: relative;
+}
+
+#daysRow p{
+    width: 25px;
+    text-align: center;
+}
+
+#daysRow::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100px;
+    width: 3px;
+    background-color: black;
+
+    box-shadow:
+    -70px 0 0 0, 
+    78px 0 0 0,
+    156px 0 0 0,
+    234px 0 0 0,
+    312px 0 0 0,
+    390px 0 0 0,
+    463px 0 0 0;
+
+}
+
+#none{
+    visibility: hidden;
+}

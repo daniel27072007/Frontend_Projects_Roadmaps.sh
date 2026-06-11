@@ -1,0 +1,204 @@
+@import url('https://googleapis.com');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Stack Sans Text', sans-serif;
+}
+
+.settings{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    min-height: 100vh;
+}
+
+.formSpace{
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 30px;
+    background-color: white;
+    width: 50%;
+    height: 700px;
+    padding: 40px;
+    display: flex;
+}
+
+.formPart{
+    /* border: 3px solid black; */
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.infoBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    font-size: 25px;
+    gap: 10px;
+    padding-right: 100px;
+    position: relative;
+}
+
+.infoBox img{
+    width: 30px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.toggle-label{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    right: 120px;
+    transform: translateY(-32%);
+}
+
+.toggle-label2{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    right: 120px;
+    transform: translateY(-32%);
+}
+
+.infoBox input{
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 65px;
+    font-size: 20px;
+    padding: 10px;
+    transition: background-color 0.2s;
+}
+
+.infoBox input:focus-visible{
+    background-color: rgb(255, 245, 151);
+}
+
+.toggle-label:focus-visible {
+    outline: 3px solid #000000; /* Azul padrão de acessibilidade */
+    outline-offset: 4px;       /* Afasta a linha azul para não colar no desenho do olho */
+    border-radius: 4px;
+}
+
+.toggle-label2:focus-visible {
+    outline: 3px solid #000000; /* Azul padrão de acessibilidade */
+    outline-offset: 4px;       /* Afasta a linha azul para não colar no desenho do olho */
+    border-radius: 4px;
+}
+
+/* Parte sobre o aria, nao sei bem ainda */
+.error-message {
+  color: #d93025;
+  font-size: 0.875rem;
+  min-height: 20px;
+  font-weight: 500;
+}
+
+input[aria-invalid="true"] {
+  border-color: #d93025;
+  box-shadow: 0 0 0 2px rgba(217, 48, 37, 0.2);
+}
+
+/* Garante que o foco no campo com erro também seja visível */
+input[aria-invalid="true"]:focus-visible {
+  border-color: #d93025;
+  box-shadow: 0 0 0 4px rgba(217, 48, 37, 0.4);
+}
+
+.passwordCheckbox{
+    display: none;
+}
+
+.openEye{
+    display: block;
+}
+
+.closeEye{
+    display: none;
+}
+
+.passwordCheckbox:checked ~ .toggle-label .openEye{
+    display: none;
+}
+.passwordCheckbox:checked ~ .toggle-label .closeEye{
+    display: block;
+}
+
+.passwordCheckbox2{
+    display: none;
+}
+
+.openEye2{
+    display: block;
+}
+
+.closeEye2{
+    display: none;
+}
+
+.passwordCheckbox2:checked ~ .toggle-label2 .openEye2{
+    display: none;
+}
+.passwordCheckbox2:checked ~ .toggle-label2 .closeEye2{
+    display: block;
+}
+
+#update{
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 65px;
+    margin-right: 100px;
+    text-align: center;
+    padding: 13px 0;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.niceThings{
+    /* border: 3px solid black; */
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#profileCompleteness{
+    /* border: 3px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    gap: 20px;
+    flex: 2;
+}
+
+#checkList{
+    flex: 3;
+    border-radius: 20px;
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.checked{
+    color: rgb(165, 165, 165);
+    opacity: 90%;
+}

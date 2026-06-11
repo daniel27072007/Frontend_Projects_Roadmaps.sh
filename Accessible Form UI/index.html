@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accessible Form UI</title>
+        <link rel="icon" href="favicom.png">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>    
+    <body>
+        <section class="settings">
+            <section class="formSpace">
+                <section class="formPart">
+                    <div class="infoBox">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" name="fullName"  id="fullName" class="fullName" aria-required="true" aria-invalid="false" aria-describedby="fullName-error">
+                        <span id="fullName-error" class="error-message" aria-live="assertive"></span>
+                    </div>
+                    <div class="infoBox">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" aria-required="true" aria-invalid="false" aria-describedby="email-error">
+                        <span id="email-error" class="error-message" aria-live="assertive"></span>
+                    </div>
+                    <div class="infoBox"> 
+                        <label for="password">Enter Password</label> 
+  
+                        <input type="password" name="password" id="password" aria-required="true" aria-invalid="false" aria-describedby="password-error"> 
+  
+                        <!-- O CHECKBOX VEM PRIMEIRO (O motor lógico) -->
+                        <input type="checkbox" name="passwordCheckbox" id="passwordShower" class="passwordCheckbox"> 
+  
+                        <!-- A LABEL VEM DEPOIS (O botão visual) -->
+                        <label for="passwordShower" class="toggle-label" tabindex="0" aria-label="Password visibility"
+                        onkeydown="if(event.key === 'Enter') this.click();">
+                        <img src="icons8-eye-90.png" alt="Esconder senha" class="openEye">
+                        <img src="icons8-closed-eye-90.png" alt="Mostrar senha" class="closeEye">
+                        </label> 
+  
+                        <span id="password-error" class="error-message" aria-live="assertive"></span> 
+                    </div>
+                    <div class="infoBox">
+                        <label for="passwordConfirm">Confirm Password</label>
+                        <input type="password" name="passwordConfirm" id="passwordConfirm" aria-required="true" aria-invalid="false" aria-describedby="confirm-error">
+                        
+                        <!-- O CHECKBOX VEM PRIMEIRO (O motor lógico) -->
+                        <input type="checkbox" name="passwordCheckbox2" id="passwordShower2" class="passwordCheckbox2"> 
+  
+                        <!-- A LABEL VEM DEPOIS (O botão visual) -->
+                        <label for="passwordShower2" class="toggle-label2" tabindex="0" aria-label="Password visibility"
+                        onkeydown="if(event.key === 'Enter') this.click();">
+                        <img src="icons8-eye-90.png" alt="Esconder senha" class="openEye2">
+                        <img src="icons8-closed-eye-90.png" alt="Mostrar senha" class="closeEye2">
+                        </label>
+
+                        <span id="confirm-error" class="error-message" aria-live="assertive"></span>
+                    </div>
+                    <a href="#" id="update">Update Profile</a>               
+                </section>
+                <section class="niceThings">
+                    <div id="profileCompleteness">
+                        <img src="profile Completeness.png" alt="Profile Completeness" id="profileCompletenessImg">
+                        <h3>Profile Completeness</h3>
+                    </div>
+                    <div id="checkList">
+                        <p class="checked"><del>Create Account</del></p>
+                        <p class="checked"><del>Update Roadmap Progress</del></p>
+                        <p class="checked"><del>Setup Public Profile</del></p>
+                        <p class="checkItens">Complete Your First Project</p>
+                        <p class="checkItens">Invite Your Friends</p>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </body>
+</html>

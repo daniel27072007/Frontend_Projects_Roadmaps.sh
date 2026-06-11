@@ -1,0 +1,278 @@
+@import url('https://googleapis.com');
+
+/* Settings gerais */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Stack Sans Text', sans-serif;
+}
+
+hr{
+    width: 100%;
+    border: 0;
+    border-top: black solid 3px;
+}
+
+.settings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.settings p{
+    font-size: 30px;
+}
+
+.header{
+    margin: 50px auto;
+}
+
+#title{
+    padding: 20px;
+    padding-bottom: 0;
+    font-size:50px;
+}
+
+#subtitle{
+    color: gray;
+}
+
+.testimonials1{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.t1-box{
+    border-right: solid black 3px;
+    padding: 30px;
+    flex: 1;
+    height: 500px;
+}
+
+.testimonials2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.t2-box{
+    display: flex;
+    border-bottom: solid black 3px;
+    padding: 60px;
+    padding-bottom: 100px;
+    height: 500px;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+}
+
+.t3-box{
+    display: flex;
+    border-bottom: solid black 3px;
+    padding: 60px;
+    height: 650px;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+}
+
+#authorBox{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 30px;
+    margin-top: 60px;
+}
+
+#authorImg{
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+    border: solid black 2px;
+}
+
+#authorContent{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#author{
+    text-align: left;
+}
+
+/* 1-Testemunho */
+
+#reviewBox1{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 30px 60px;
+
+    border: solid black 2px;
+    height: 250px;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+
+    position: relative;
+}
+
+#reviewBox1::after{
+    content: '';
+    position: absolute;
+
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 40px solid black; /* Cor igual ao fundo do balão */
+
+    bottom: -40px;
+    left: 55px;
+}
+
+#review1{
+    margin-top: auto;
+}
+
+/* 2-Testemunho */
+
+#reviewBox2{
+    border: solid 2px black;
+    border-radius: 20px;
+    height: 100%;
+    padding: 30px 60px;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#authorBox2{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: auto;
+}
+
+/* 3-Testemunho */
+
+#authorImg2{
+    width: 20%;
+    aspect-ratio: 1/1;
+    border: solid black 3px;
+    border-radius: 20px;
+}
+
+#reviewBox3{
+    border: solid black 3px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    width: 900px;
+}
+
+#stars{
+    text-align: left;
+    padding: 40px 0px 20px 30px;
+}
+
+#stars img{
+    width: 50px;
+    aspect-ratio: 1/1;
+}
+
+#reviewBox3 p{
+    text-align: left;
+    padding-left: 30px;
+}
+
+#description1{
+    color: gray;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+#comment1{
+    margin-top: auto;
+    padding-bottom: 50px;
+}
+
+/* 4-Testemunho */
+
+#reviewBox4{
+    border: solid 3px black;
+    border-radius: 20px;
+    width: 75%;
+}
+
+#comment2{
+    padding: 80px 160px;
+    font-size: 25px;
+}
+
+.authorSidebar{
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    position: relative;
+}
+
+.authorSidebar::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    
+    width: 15px;
+    height: 15px;
+    border-bottom: solid 3px black;
+    border-left: solid 3px black;
+    transform: rotate(45deg);
+}
+
+.authorSidebar::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    
+    width: 15px;
+    height: 15px;
+    border-bottom: solid 3px black;
+    border-right: solid 3px black;
+    transform: rotate(-45deg);
+}
+
+#authorImgTrans{
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+    border: solid rgb(82, 81, 81) 2px;
+    opacity: 30%;
+}
+
+#author1{
+    font-size: 25px;
+    padding-top: 50px;
+}

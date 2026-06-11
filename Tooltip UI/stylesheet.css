@@ -1,0 +1,96 @@
+/* Reset Geral */
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+} 
+
+
+body { 
+  background-color: gray; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh; 
+} 
+
+
+.elements { 
+  width: 80%; 
+  height: 700px; 
+  background-color: white; 
+  border: 3px solid black; 
+  border-radius: 20px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 120px;
+} 
+
+
+.item-menu { 
+  position: relative;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  /* border: solid 3px black; */
+  height: 300px; 
+} 
+
+
+.item-menu p { 
+  font-size: 50px; 
+  position: relative; 
+  font-family: sans-serif; 
+  padding-top: 20px;
+} 
+
+.tooltip {
+  width: 280px;        
+  height: 70px; 
+  background-color: black; 
+  color: white; 
+  border-radius: 15px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  font-size: 18px; 
+  text-align: center; 
+  padding: 10px;
+  position: relative;
+  opacity: 0;
+  transition: opacity .3s ease, transform .3s ease;
+} 
+
+.tooltip::after { 
+  content: ''; 
+  position: absolute; 
+  top: 100%;           
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 0; 
+  height: 0; 
+  border-left: solid 10px transparent; 
+  border-right: solid 10px transparent; 
+  border-top: solid 10px black;
+} 
+
+.text-dot::after { 
+  content: ''; 
+  position: absolute; 
+  top: 76%; 
+  right: -130px;
+  width: 20px; 
+  height: 20px; 
+  border-radius: 50%; 
+  background-color: black; 
+  transform: translateY(-50%);
+  pointer-events: none; 
+}
+
+
+.item-menu:has(p:hover) .tooltip{
+  opacity: 1;
+  transform: translateY(-50%);
+}

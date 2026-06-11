@@ -1,0 +1,123 @@
+@import url('https://googleapis.com');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Stack Sans Text', sans-serif;
+}
+
+.settings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    /*border: solid black 3px; debuging*/
+}
+
+.header{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+#title{
+    margin-top: 20px;
+}
+
+#subtitle{
+    color: gray;
+    margin-top: 10px;
+}
+
+.info{
+    width: 100%;
+}
+
+.changelog-list{
+    /*border: solid black 3px; debuging*/
+    width: 100%;
+    list-style: none;
+    position: relative;
+    /* ADICIONADO: Reduz a largura máxima da lista para o texto da direita respirar */
+    max-width: 680px; 
+    
+    /* ADICIONADO: Força o navegador a centralizar a lista no meio do monitor */
+    margin: 0 auto; 
+}
+
+.changelog-list::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 35%;
+    width: 2px;
+    background-color: black;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.changelog-item{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.date{
+    /*border: solid black 3px;*/
+    color: gray;
+    padding: 0px 20px;
+    text-align: right;
+}
+
+.content{
+    /* border:solid black 3px; */
+    color: black;
+    padding: 0px 20px;
+    text-align: left;
+}
+
+.changelog-item::before {
+    content: '';
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.final{
+    margin-top: 50px;
+}
+
+#button {
+    color: white;
+    background-color: black;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+#button:hover {
+    background-color: #333;
+}
+
+#button:active {
+    transform: scale(0.98);
+}
+
