@@ -21,4 +21,5 @@ Aqui está a lista de todos os projetos que desenvolvi seguindo o roadmap:
   <li><a href="https://roadmap.sh/projects/pricing-comparison-table">Pricing Comparison Table</a></li>
   <li><a href="https://roadmap.sh/projects/blog-post-page">Blog Post Page</a></li>
   <li><a href="https://roadmap.sh/projects/contact-form">Contact Form</a></li>
+  <li><a href="https://roadmap.sh/projects/photo-showcase">Photo Showcase</a></li>
 </ul>
