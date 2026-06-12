@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="icon" href="favicon.png">
+</head>
+<body>
+    <header>
+        <h1>Acme Support</h1>
+        <a href="#">Home</a>
+        <a href="#">Help</a>
+        <a href="#">Contact</a>
+    </header>
+    <hr>
+    <main>
+        <h1>Contact us</h1>
+        <p>Send us a message and we will get back to you</p>
+        <form action="#" method="post">
+            <label for="fullName">Full Name  </label><input id="fullName" name="User_Full_Name" type="text" required>
+            <br><br>
+            <label for="email">Email  </label><input id="email" name="User_Email" type="email" required>
+            <br><br>
+            <label for="dropdown">Subject </label>
+            <select name="Subject" id="dropdown" required>
+                <option value="">Chose a Subject</option>
+                <option value="Website Error">Website Error</option>
+                <option value="Long Loading">Long Loading</option>
+                <option value="Site Crashed">Site Crashed</option>
+            </select>
+            <br><br>
+            <label for="message">Message  </label>
+            <textarea id="message" minlength="5" maxlength="250" required name="Message"></textarea>
+            <br><br>
+            <fieldset>
+                <legend>How did you hear about us?</legend>
+                <input type="radio" name="byWho" id="search" value="Search">
+                <label for="search">Search</label>
+                <input type="radio" name="byWho" id="friends" value="Friends">
+                <label for="friends">Friends</label>
+                <input type="radio" name="byWho" id="socialMedia" value="Social media">
+                <label for="socialMedia">Social media</label>
+            </fieldset>
+            <br>
+            <input id="newsLetter" type="checkbox" name="Newsletter"><label for="newsLetter">Send me products updates</label>
+            <br><br>
+            <button type="submit">Send message</button>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p>&copy; 2026 Acme Support</p>
+    </footer>
+</body>
+</html>
