@@ -1,5 +1,5 @@
 # Roadmaps Frontend Projects
-g
+
 Aqui está a lista de todos os projetos que desenvolvi seguindo o roadmap:
 
 <ul>
