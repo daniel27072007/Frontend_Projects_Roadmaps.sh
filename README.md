@@ -1,5 +1,5 @@
 # Roadmaps Frontend Projects
-
+g
 Aqui está a lista de todos os projetos que desenvolvi seguindo o roadmap:
 
 <ul>
@@ -22,4 +22,5 @@ Aqui está a lista de todos os projetos que desenvolvi seguindo o roadmap:
   <li><a href="https://roadmap.sh/projects/blog-post-page">Blog Post Page</a></li>
   <li><a href="https://roadmap.sh/projects/contact-form">Contact Form</a></li>
   <li><a href="https://roadmap.sh/projects/photo-showcase">Photo Showcase</a></li>
+  <li><a href="https://roadmap.sh/projects/pricing-cards">Pricing Cards</a></li>
 </ul>
