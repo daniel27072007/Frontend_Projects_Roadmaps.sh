@@ -60,6 +60,6 @@ You can review the source code through two standard deployment methods:
 
 Developed by **Daniel Belculfine**
 
-* **LinkedIn:** [seu-perfil](https://linkedin.com)
-* **GitHub:** [seu-usuario](https://github.com)
-* **Roadmap.sh:** [seu-perfil](https://roadmap.sh)
+* **LinkedIn:** [Daniel Belculfine](https://www.linkedin.com/in/daniel-belculfine-2905253b3/)
+* **GitHub:** [Daniel27072007](https://github.com/daniel27072007)
+* **Roadmap.sh:** [dbelculfine](https://roadmap.sh/u/dbelculfine)
