@@ -58,6 +58,6 @@ You can evaluate this application using standard local browser rendering workflo
 
 Developed by **Daniel Belculfine**
 
-* **LinkedIn:** [Daniel Belculfine](https://linkedin.com)
-* **GitHub:** [Daniel27072007](https://github.com)
-* **Roadmap.sh:** [dbelculfine](https://roadmap.sh)
+* **LinkedIn:** [Daniel Belculfine](https://www.linkedin.com/in/daniel-belculfine-2905253b3/)
+* **GitHub:** [Daniel27072007](https://github.com/daniel27072007)
+* **Roadmap.sh:** [dbelculfine](https://roadmap.sh/u/dbelculfine)
