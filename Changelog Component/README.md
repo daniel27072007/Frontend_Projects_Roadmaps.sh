@@ -36,7 +36,7 @@ To complete this Roadmap.sh challenge successfully, the implementation required 
 This application operates completely as a client-side layout component using standard native browser engines. No server compilation or script setups are required.
 
 ### 1. Clone the Repository
-Execute the git command inside your terminal:
+Execute the git command inside your terminal (replace with your specific repository URL copied from GitHub):
 ```bash
 git clone https://github.com
 ```
