@@ -1,7 +1,7 @@
 # Roadmaps Frontend Projects
 
-Here is a list of all the projects i made about frontend in the Roadmap.sh.
-To see more information about each one, what i learn, what i needed to do and how to install and execute, click on the project folder.<br>
+Here is a list of all the projects i made about frontend in the Roadmap.sh.<br>
+To see more information about each one, what i learn, what i needed to do and how to install and execute, click on the project folder.
 
 <ul>
   <li><a href="https://roadmap.sh/projects/single-page-cv">Single-Page CV</a></li>
